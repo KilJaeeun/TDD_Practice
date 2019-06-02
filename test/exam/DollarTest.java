@@ -17,4 +17,13 @@ public class DollarTest {
 
   }
 
+  @Test
+  public void testEquality() {
+    assertEquals(true,
+        new Dollar(5).equals(new Dollar(5)));
+    assertEquals(false,
+        new Dollar(5).equals(new Dollar(6)));
+
+  }
+
 }

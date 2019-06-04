@@ -1,5 +1,7 @@
 package exam;
 
+import static junit.framework.Assert.assertFalse;
+import static junit.framework.Assert.assertTrue;
 import static junit.framework.TestCase.assertEquals;
 
 import org.junit.Test;
@@ -19,9 +21,9 @@ public class DollarTest {
 
   @Test
   public void testEquality() {
-    assertEquals(true,
+    assertTrue(
         new Dollar(5).equals(new Dollar(5)));
-    assertEquals(false,
+    assertFalse(
         new Dollar(5).equals(new Dollar(6)));
 
   }

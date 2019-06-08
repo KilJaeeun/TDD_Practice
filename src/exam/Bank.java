@@ -2,7 +2,7 @@ package exam;
 
 public class Bank {
 
-  public Money reduce(Expression sum, String usd) {
-    return Money.dollar(10);
+  public Money reduce(Expression source, String to) {
+    return source.reduce(to);
   }
 }
